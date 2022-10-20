@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "302238305042",
+    "project_id": "find-app-805c6",
+    "storage_bucket": "find-app-805c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302238305042:android:26bb9250d0aa45f11cc1cb",
+        "android_client_info": {
+          "package_name": "com.geraldcode.findapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302238305042-t8o8d6jmpv34f53kc952giipaqicvpkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC96xQCXWxeDQdDSFQrzhv2Uj5jYSH2QQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302238305042-t8o8d6jmpv34f53kc952giipaqicvpkc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

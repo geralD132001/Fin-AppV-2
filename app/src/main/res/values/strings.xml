@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FindApp</string>
+
+    <!--MAIN ACTIVITY !-->
+    <string name="buttonLogin">Login</string>
+    <string name="buttonRegistro">Registro</string>
+
+    <!-- ACTIVITY REGISTRO -->
+    <string name="crearCuentaTXT">Crear una cuenta</string>
+    <string name="nombreEditText">Nombres</string>
+    <string name="correoEditText">Correo electrónico</string>
+    <string name="contraseniaEditText">Contraseña</string>
+    <string name="confirmarContraseniaEditText">Confirmar contraseña</string>
+    <string name="buttonRegistrarUsuario">Registrar</string>
+    <string name="tengoUnaCuentaTXT">Tengo una cuenta</string>
+
+    <!-- ACTIVIDAD LOGIN -->
+    <string name="iniciarSesionTXT">Iniciar Sesión</string>
+    <string name="correoLogin">Correo</string>
+    <string name="passLogin">Contraseña</string>
+    <string name="btnLogeo">Ingresar</string>
+    <string name="usuarioNuevoTXt">¿No tienes una cuenta?. Regístrate</string>
+
+    <!-- MENÚ PRINCIPAL-->
+    <string name="CerrarSesion">Salir</string>
+    <string name="BienvenidoPrincipal">Bienvenido(a)</string>
+    <string name="UidPrincipal"> -- </string>
+    <string name="NombresPrincipal"> -- </string>
+    <string name="CorreoPrincipal"> -- </string>
+    <string name="EstadoCuentaPrincipal">No Verificado</string>
+    <string name="AgregarNotas">Agregar</string>
+    <string name="ListarNotas">Mis Notas</string>
+    <string name="Importantes">Importantes</string>
+    <string name="Contactos">Contactos</string>
+    <string name="AcercaDe">Acerca de</string>
+</resources>
