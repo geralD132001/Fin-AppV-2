@@ -47,7 +47,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/BienvenidoPrincipal"
+                        android:text="@string/bienvenidoPrincipal"
                         android:textColor="#fff"
                         android:textSize="20sp" />
 
@@ -60,11 +60,11 @@
 
                     <!-- UID -->
                     <TextView
-                        android:id="@+id/UidPrincipal"
+                        android:id="@+id/uidPrincipal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/UidPrincipal"
+                        android:text="@string/uidPrincipal"
                         android:textColor="#fff"
                         android:textSize="20sp"
                         android:visibility="gone" />
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:visibility="gone"
-                        android:id="@+id/Linear_Nombres">
+                        android:id="@+id/linearNombres">
 
                         <!-- ICONO -->
                         <androidx.appcompat.widget.AppCompatImageView
@@ -86,11 +86,11 @@
 
                         <!-- NOMBRES -->
                         <TextView
-                            android:id="@+id/NombresPrincipal"
+                            android:id="@+id/nombresPrincipal"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/worksans"
-                            android:text="@string/NombresPrincipal"
+                            android:text="@string/nombresPrincipal"
                             android:textColor="#fff"
                             android:textSize="17sp"
                             android:layout_marginStart="3dp"/>
@@ -100,7 +100,7 @@
 
                     <!-- CORREO -->
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:id="@+id/Linear_Correo"
+                        android:id="@+id/linearCorreo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -115,11 +115,11 @@
 
                         <!-- CORREO -->
                         <TextView
-                            android:id="@+id/CorreoPrincipal"
+                            android:id="@+id/correoPrincipal"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/worksans"
-                            android:text="@string/CorreoPrincipal"
+                            android:text="@string/correoPrincipal"
                             android:textColor="#fff"
                             android:textSize="17sp"
                             android:layout_marginStart="3dp"/>
@@ -129,7 +129,7 @@
 
                     <!-- VERIFICACIÓN -->
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:id="@+id/Linear_Layout_Verificacion"
+                        android:id="@+id/linearVerificacion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -144,12 +144,12 @@
 
                         <!-- ESTADO -->
                         <Button
-                            android:id="@+id/EstadoCuentaPrincipal"
+                            android:id="@+id/estadoCuentaPrincipal"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/worksans"
                             android:backgroundTint="#607d8b"
-                            android:text="@string/EstadoCuentaPrincipal"
+                            android:text="@string/estadoCuentaPrincipal"
                             android:textColor="#fff"
                             android:textSize="17sp"
                             android:layout_marginStart="3dp"/>
@@ -190,16 +190,16 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/agregar" />
+                        android:src="@drawable/icono_add" />
 
                     <Button
-                        android:id="@+id/AgregarNotas"
+                        android:id="@+id/buttonAgregarObjeto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/AgregarNotas" />
+                        android:text="@string/buttonAgregarObjeto" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -216,16 +216,16 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/lista" />
+                        android:src="@drawable/objects_icon" />
 
                     <Button
-                        android:id="@+id/ListarNotas"
+                        android:id="@+id/buttonObjetos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/ListarNotas" />
+                        android:text="@string/buttonObjetos" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -252,16 +252,16 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/archivados" />
+                        android:src="@drawable/usuario_icon" />
 
                     <Button
-                        android:id="@+id/Importantes"
+                        android:id="@+id/buttonPerfilUsuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/Importantes" />
+                        android:text="@string/buttonPerfilUsuario" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -278,16 +278,16 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/perfil" />
+                        android:src="@drawable/icons_config" />
 
                     <Button
-                        android:id="@+id/Contactos"
+                        android:id="@+id/buttonConfiguracion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/Contactos" />
+                        android:text="@string/buttonConfiguracion" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -317,13 +317,13 @@
                         android:src="@drawable/acerca_de" />
 
                     <Button
-                        android:id="@+id/AcercaDe"
+                        android:id="@+id/buttonAcercaDe"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/AcercaDe" />
+                        android:text="@string/buttonAcercaDe" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -343,13 +343,13 @@
                         android:src="@drawable/cerrar_sesion2" />
 
                     <Button
-                        android:id="@+id/CerrarSesion"
+                        android:id="@+id/buttonCerrarSesion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/CerrarSesion" />
+                        android:text="@string/buttonCerrarSesion" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
