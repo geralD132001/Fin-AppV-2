@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="120dp"
+    android:layout_gravity="center"
+    android:background="#F0F3F4"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccpDialog_backgroundColor="@color/white"
+            app:ccp_autoDetectCountry="true" />
+
+        <EditText
+            android:id="@+id/establecerTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:hint="@string/establecerTelefono"
+            android:inputType="phone"
+            android:textColor="#5D6D7E"
+            android:textColorHint="#5D6D7E" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/buttonAceptarTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/worksans"
+        android:text="@string/buttonAceptarTelefono" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

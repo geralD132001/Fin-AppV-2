@@ -1,9 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Controller.Perfil.PerfilUsuario">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Portada - Imagen de perfil -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <!-- Portada -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/portada" />
+
+            <!-- Imagen de perfil -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imagen_perfil_usuario"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="120dp"
+                android:background="#354f60"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagen_perfil_usuario" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/editarImagen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="230dp"
+                android:src="@drawable/editar_imagen_perfil" />
+
+
+        </RelativeLayout>
+
+
+        <!-- Datos del usuario -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Correo -->
+            <TextView
+                android:id="@+id/correoPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/worksans"
+                android:text="@string/correoPerfil"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- Uid -->
+            <TextView
+                android:id="@+id/uidPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/icono_udi_perfil_usuario"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/worksans"
+                android:text="@string/uidPerfil"
+                android:textSize="18sp" />
+
+            <!-- Nombres -->
+            <EditText
+                android:id="@+id/nombresPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/nombresPerfil"
+                android:inputType="textPersonName" />
+
+            <!-- Apellidos -->
+            <EditText
+                android:id="@+id/apellidosPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/apellidosPerfil"
+                android:inputType="textPersonName" />
+
+            <!-- Edad -->
+            <EditText
+                android:id="@+id/edadPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/edadPerfil"
+                android:inputType="number" />
+
+
+            <!-- Domicilio -->
+            <EditText
+                android:id="@+id/domicilioPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/domicilioPerfil"
+                android:inputType="text" />
+
+            <!-- Universidad -->
+            <EditText
+                android:id="@+id/universidadPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/universidadPerfil"
+                android:inputType="text" />
+
+            <!-- Profesion -->
+            <EditText
+                android:id="@+id/cargoPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/cargoPerfil"
+                android:inputType="text" />
+
+            <!-- Tipo documento -->
+            <EditText
+                android:id="@+id/tipoDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/tipoDocumento"
+                android:inputType="text" />
+
+            <!-- Número documento -->
+            <EditText
+                android:id="@+id/numeroDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/numeroDocumento"
+                android:inputType="text" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <!-- Telefono -->
+                <TextView
+                    android:id="@+id/telefonoPerfil"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:hint="@string/telefonoPerfil"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/editarTelefono"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/editar_telefono2" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:id="@+id/fechaNacimientoPerfil"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:text="@string/fechaNacimientoPerfil"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/calendario"
+                    android:id="@+id/editarFecha"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- Guardar datos -->
+            <Button
+                android:id="@+id/guardarDatos"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/guardarDatos" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

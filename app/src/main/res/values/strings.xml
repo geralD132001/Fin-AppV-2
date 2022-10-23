@@ -43,4 +43,40 @@
     <string name="correoSoporte">Soporte: geraldsandy@upeu.edu.pe</string>
     <string name="versionApp">Versión: 1.0</string>
     <string name="entendidoInfo">Entendido</string>
+
+    <!-- Perfil del usuario -->
+    <string name="uidPerfil">Uid</string>
+    <string name="nombresPerfil">Mis nombres</string>
+    <string name="apellidosPerfil">Mis apellidos</string>
+    <string name="correoPerfil">Correo</string>
+    <string name="edadPerfil">Edad</string>
+    <string name="telefonoPerfil">Teléfono</string>
+    <string name="domicilioPerfil">Domicilio</string>
+    <string name="universidadPerfil">Universidad</string>
+    <string name="cargoPerfil">Cargo</string>
+    <string name="numeroDocumento">Número documento</string>
+    <string name="tipoDocumento">Tipo documento</string>
+    <string name="fechaNacimientoPerfil">Fecha de nacimiento</string>
+    <string name="guardarDatos">Guardar Datos</string>
+
+    <!-- CUADRO DE DIALOGO ESTABLECER TELEFONO -->
+    <string name="establecerTelefono">Escriba su telefono</string>
+    <string name="buttonAceptarTelefono">Aceptar</string>
+
+    <!-- Cambiar Password -->
+    <string name="actualPassTXT">Contraseña actual: </string>
+    <string name="actualPass"> -- </string>
+    <string name="etActualPass">Contraseña actual</string>
+    <string name="etNuevoPass">Nueva contraseña</string>
+    <string name="etRepetirNuevoPass">Repetir nueva contraseña</string>
+    <string name="buttonActualizarPass">Actualizar</string>
+
+    <!-- Perfil de usuario Imagen de perfil -->
+    <string name="buttonImagenDe">Elegir imagen de</string>
+    <string name="buttonActualizarImagen">Acutalizar imagen</string>
+
+    <!-- CUADRO DE DIALOGO - ELEGIR IMAGEN DE -->
+    <string name="elegirImagenTXT">Elegir imagen de:</string>
+    <string name="buttonElegirGaleria">Galería</string>
+    <string name="buttonElegirCamara">Cámara</string>
 </resources>

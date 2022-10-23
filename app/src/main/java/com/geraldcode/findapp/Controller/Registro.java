@@ -137,7 +137,6 @@ public class Registro extends AppCompatActivity {
         Data.put("tipo_documento", "");
         Data.put("numero_documento", "");
         Data.put("universidad", "");
-        Data.put("profesion", "");
         Data.put("cargo", "");
         Data.put("fecha_de_nacimiento", "");
         Data.put("imagen_perfil", "");
