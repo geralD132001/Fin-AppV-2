@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/agregarObjetoMenu2"
+        android:id="@+id/agregarObjetoMenu2"
+        android:icon="@drawable/icono_agregar_nota"
+        app:showAsAction="ifRoom">
+    </item>
+</menu>

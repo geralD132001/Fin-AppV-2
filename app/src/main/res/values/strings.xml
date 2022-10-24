@@ -79,4 +79,30 @@
     <string name="elegirImagenTXT">Elegir imagen de:</string>
     <string name="buttonElegirGaleria">Galería</string>
     <string name="buttonElegirCamara">Cámara</string>
+
+    <!-- Agregar Objeto -->
+    <string name="uidUsuarioAddObjeto">Uid del Usuario</string>
+    <string name="correoUsuarioAddObjeto">Correo de usuario</string>
+    <string name="fechaHoraActualTXTAddObjeto">Fecha de registro</string>
+    <string name="fechaHoraActualAddObjeto">Fecha y Hora Actual</string>
+    <string name="tituloAddObjeto">Título</string>
+    <string name="telefonoAddObjeto">Contacto</string>
+    <string name="descripcionAddObjeto">Descripción</string>
+    <string name="categoriaAddObjeto">Categoria</string>
+    <string name="lugarPerdidaAddObjeto">Lugar de perdida</string>
+    <string name="btnCalendarioAddObjeto">Calendario</string>
+    <string name="fechaAddObjeto">00/00/00</string>
+    <string name="estadoAddObjeto">No encontrado</string>
+    <string name="buttonAddObjeto">Guardar objeto</string>
+
+    <!-- CUADRO DE DIÁLOGO - VALIDAD REGISTRO DE CONTACTO -->
+    <string name="validarTXT">Por favor complete al menos el campo título del objeto</string>
+    <string name="buttonValidarRegistroObjeto">Entendido</string>
+
+    <!-- MENÚ -->
+    <string name="agregarObjetoMenu">Agregar Contacto</string>
+    <string name="agregarObjetoMenu2">Agregar Contacto</string>
+    <string name="vaciarObjetosMenu">Eliminar todos los contactos</string>
+    <string name="buscarObjetosMenu">Buscar Contactos</string>
+    <string name="filtrarObjetos">Filtrar objetos</string>
 </resources>
