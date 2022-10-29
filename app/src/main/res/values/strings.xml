@@ -92,8 +92,24 @@
     <string name="lugarPerdidaAddObjeto">Lugar de perdida</string>
     <string name="btnCalendarioAddObjeto">Calendario</string>
     <string name="fechaAddObjeto">00/00/00</string>
-    <string name="estadoAddObjeto">No encontrado</string>
+    <string name="estadoAddObjeto">Perdido</string>
     <string name="buttonAddObjeto">Guardar objeto</string>
+
+    <!-- Actualizar Objeto -->
+    <string name="idUpdateObjeto">Id objeto</string>
+    <string name="uidUsuarioUpdateObjeto">Uid del Usuario</string>
+    <string name="correoUsuarioUpdateObjeto">Correo de usuario</string>
+    <string name="fechaHoraActualUpdateObjeto">Fecha y Hora Actual</string>
+    <string name="tituloUpdateObjeto">Título</string>
+    <string name="telefonoUpdateObjeto">Contacto</string>
+    <string name="descripcionUpdateObjeto">Descripción</string>
+    <string name="categoriaUpdateObjeto">Categoria</string>
+    <string name="lugarPerdidaUpdateObjeto">Lugar de perdida</string>
+    <string name="btnCalendarioUpdateObjeto">Calendario</string>
+    <string name="fechaPerdidaUpdateObjeto">00/00/00</string>
+    <string name="estadoUpdateObjeto">Perdido</string>
+    <string name="estadoNewUpdate">--</string>
+    <string name="buttonUpdateObjeto">Actualizar objeto</string>
 
     <!-- CUADRO DE DIÁLOGO - VALIDAD REGISTRO DE CONTACTO -->
     <string name="validarTXT">Por favor complete al menos el campo título del objeto</string>
@@ -101,8 +117,70 @@
 
     <!-- MENÚ -->
     <string name="agregarObjetoMenu">Agregar Contacto</string>
+    <string name="actualizatObjetoMenu">Actualizar Contacto</string>
     <string name="agregarObjetoMenu2">Agregar Contacto</string>
     <string name="vaciarObjetosMenu">Eliminar todos los contactos</string>
     <string name="buscarObjetosMenu">Buscar Contactos</string>
     <string name="filtrarObjetos">Filtrar objetos</string>
+
+
+    <!-- spinner -->
+    <string-array name="estadosObjetos">
+        <item>Perdido</item>
+        <item>Entregado</item>
+        <item>Encontrado</item>
+    </string-array>
+
+
+    <!-- DETALLE OBJETO -->
+    <string name="detalleObjetoTXT">Detalle del objeto</string>
+    <string name="idObjetoDetalleTXT">Id del objeto</string>
+    <string name="idObjetoDetalle"> -- </string>
+    <string name="uidUsuarioObjetoDetalleTXT">Uid usuario</string>
+    <string name="uidUsuarioObjetoDetalle">--</string>
+    <string name="correoUsuarioObjetoDetalleTXT">Correo usuario</string>
+    <string name="correoUsuarioObjetoDetalle"> -- </string>
+    <string name="fechaRegistroObjetoDetalleTXT">Fecha registro</string>
+    <string name="fechaRegistroObjetoDetalle"> -- </string>
+    <string name="tituloObjetoDetalleTXT">Título</string>
+    <string name="tituloObjetoDetalle"> -- </string>
+    <string name="descripcionObjetoDetalleTXT">Descripción</string>
+    <string name="descripcionObjetoDetalle"> -- </string>
+    <string name="telefonoContactoDetalleTXT">Telefóno</string>
+    <string name="telefonoContactoDetalle"> -- </string>
+    <string name="categoriaObjetoDetalleTXT">Categoria</string>
+    <string name="categoriaObjetoDetalle"> -- </string>
+    <string name="lugarPerdidaObjetoDetalleTXT">Lugar de perdida</string>
+    <string name="lugarPerdidaObjetoDetalle"> -- </string>
+    <string name="fechaPerdidaObjetoDetalleTXT">Fecha de perdida</string>
+    <string name="fechaPerdidaObjetoDetalle"> -- </string>
+    <string name="estadoObjetoDetalleTXT">Estado</string>
+    <string name="estadoObjetoDetalle"> -- </string>
+    <string name="llamarContactoObjetoDetalle">Llamar</string>
+    <string name="mensajeObjetoContactoDetalle">Mensaje</string>
+
+    <!-- ITEM OBJETO -->
+    <string name="idObjetoItem">Id Objeto</string>
+    <string name="uidUsuarioObjetoItem">Uid objeto</string>
+    <string name="correoUsuarioObjetoItem">Correo</string>
+    <string name="fechaHoralActualItem">Fecha hora actual</string>
+    <string name="tituloItem">Título</string>
+    <string name="descripcionObjetoItem">Descripción</string>
+    <string name="categoriaObjetoItem">Categoria</string>
+    <string name="lugarPerdidaObjetoItem">Lugar de perdida</string>
+    <string name="telefonoContactoObjetoItem">Teléfono contacto</string>
+    <string name="fechaPerdidaObjetoItem">00/00/00</string>
+    <string name="estadoObjetoItem">Perdido</string>
+
+    <!-- CUADRO DE DIALOGO OPCIONES -->
+    <string name="elijaOpcionTXT">Elija una opción</string>
+    <string name="buttonEliminarObject">Eliminar</string>
+    <string name="buttonActualizarObject">Actualizar</string>
+
+    <!-- CUADRO DE DÍALOGO - FILTRAR NOTAS -->
+    <string name="filtroTXT">Filtrar objetos: </string>
+    <string name="todosLosObjetos">Todos</string>
+    <string name="objetosPerdidos">Perdidos</string>
+    <string name="objetosEcontrados">Econtrados</string>
+    <string name="objetosEntregados">Entregados</string>
 </resources>

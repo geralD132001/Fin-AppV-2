@@ -3,15 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/descripcion_nota_detalle.xml" value="0.2385" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/icono_actualizar_contacto.xml" value="0.2325" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/icono_actualizar_nota.xml" value="0.1" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/icono_agregar_contacto.xml" value="0.2325" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/icono_buscar_contactos.xml" value="0.2325" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/icono_calendario.xml" value="0.2325" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/icono_correo.xml" value="0.2045" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/icono_nombres.xml" value="0.2045" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/icono_password.xml" value="0.2045" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/titulo_nota_detalle.xml" value="0.2385" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/categoria_icon.xml" value="0.2385" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/ic_baseline_add_location_alt_24.xml" value="0.2385" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/icon_lugar_perdida.xml" value="0.2385" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/icono_cellphone.xml" value="0.2385" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/icono_lugar_perdida_objeto.xml" value="0.2385" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_actualizar_objeto.xml" value="0.264" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_actualizar_pass_usuario.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_agregar_objeto.xml" value="0.2" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_detalle_objeto.xml" value="0.4" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_editar_imagen_perfil.xml" value="0.264" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_listar_objetos.xml" value="0.23489583333333333" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_login.xml" value="0.24895833333333334" />
@@ -22,11 +32,16 @@
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_registro.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_elegir_imagen.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_establecer_telefono.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_filtrar_objetos.xml" value="0.264" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_informacion.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_validar_registro_c.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/dialogo_cuenta_verificada.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/dialogo_opciones.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/item_objeto.xml" value="0.24791666666666667" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/menu/menu_actualizar.xml" value="0.264" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/menu/menu_agregar_objeto.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/menu/menu_agregar_objeto2.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/menu/menu_objetos.xml" value="0.1" />
       </map>
     </option>
   </component>

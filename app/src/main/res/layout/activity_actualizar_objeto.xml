@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.Objetos.ActualizarObjeto">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/portada_contacto" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageObjetoUpdate"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="120dp"
+                android:background="#354F60"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagen_contacto" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/updateImagenObjeto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/editar_imagen_perfil" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- ID DEL OBJETO -->
+            <TextView
+                android:id="@+id/idUpdateObjeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/idUpdateObjeto"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+            <!-- UID DEL USUARIO -->
+            <TextView
+                android:id="@+id/uidUsuarioUpdateObjeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/uidUsuarioUpdateObjeto"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <!-- CORREO DEL USUARIO -->
+            <TextView
+                android:id="@+id/correoUsuarioUpdateObjeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/correoUsuarioUpdateObjeto"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+            <!-- ICONO - TEXTVIEW -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/fecha_hora_registro"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/worksans"
+                    android:text="@string/fechaHoraActualTXTAddObjeto"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- FECHA Y HORA ACTUAL DEL DISPOSITIVO -->
+            <TextView
+                android:id="@+id/fechaHoraActualUpdateObjeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:fontFamily="@font/worksans"
+                android:hint="@string/fechaHoraActualUpdateObjeto"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Icono -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="25dp"
+                android:src="@drawable/alcance"
+                android:visibility="gone" />
+
+            <!-- ESTADO DEl OBJETO -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/objetoEncontradoUpdate"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:background="#16A085"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/objetoEntregadoUpdate"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="#E74C3C"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/objetoPerdidoUpdate"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="#550FD2"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/estadoUpdateObjeto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/worksans"
+                    android:text="@string/estadoUpdateObjeto"
+                    android:textSize="25sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <EditText
+                android:id="@+id/tituloUpdateObjeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/tituloUpdateObjeto"
+                android:inputType="textCapWords|textPersonName"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/descripcionUpdateObjeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/worksans"
+                android:gravity="start"
+                android:hint="@string/descripcionUpdateObjeto"
+                android:minHeight="150dp"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/categoriaUpdateObjeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/categoriaUpdateObjeto"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/lugarPerdidaUpdateObjeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/lugarPerdidaUpdateObjeto"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+            <!-- Teléfono del contacto -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Teléfono del contacto -->
+                <TextView
+                    android:id="@+id/telefonoUpdateObjeto"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/worksans"
+                    android:hint="@string/telefonoUpdateObjeto"
+                    android:inputType="phone"
+                    android:textSize="22sp" />
+
+                <!-- Códido del país  -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/editarTelefonoContactoUpdateObjeto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/editar_telefono2" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <!-- BOTÓN PARA ABRIR CALENDARIO -->
+                <Button
+                    android:id="@+id/btnCalendarioUpdateObjeto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/btnCalendarioUpdateObjeto"
+                    app:icon="@drawable/icono_calendario" />
+
+                <!-- VISUALIZAR FECHA ELEGIDA -->
+                <TextView
+                    android:id="@+id/fechaPerdidaUpdateObjeto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/worksans"
+                    android:hint="@string/fechaPerdidaUpdateObjeto"
+                    android:textSize="20sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="18dp">
+
+                <Spinner
+                    android:id="@+id/spinnerEstadoObjeto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/estadoNewUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/estadoNewUpdate" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <Button
+                android:id="@+id/buttonUpdateObjetobuttonUpdateObjeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/worksans"
+                android:text="@string/buttonUpdateObjeto"
+                android:drawableEnd="@drawable/icono_actualizar_contacto"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>
