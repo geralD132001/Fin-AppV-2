@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="0.2dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- ICONO -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icono_item_nota" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idNotaItemAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:text="@string/idNotaItemAdmin"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/uidUsuarioNoteItemAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:text="@string/uidUsuarioNoteItemAdmin"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/correoUsuarioNoteItemAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:text="@string/correoUsuarioNoteItemAdmin"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fechaHoraRegistroNoteItemAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:text="@string/fechaHoraRegistroNoteItemAdmin"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tituloNoteItemAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:text="@string/tituloNoteItemAdmin"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descripcionNoteItemAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/worksans"
+                android:text="@string/descripcionNoteItemAdmin"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/fechaNoteItemAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:text="@string/fechaNoteItemAdmin"
+                android:textSize="18sp" />
+
+            <!-- ESTADO DE LA NOTA -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tareaFinalizadaItemAdmin"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:background="#16A085"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tareaNoFinalizadaItemAdmin"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="#E74C3C"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/estadoNoteItemAdmin"
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/worksans"
+                    android:text="@string/estadoNoteItemAdmin" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.cardview.widget.CardView>

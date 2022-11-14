@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/calendarMenuItemUser"
+        android:icon="@drawable/icono_date_admin_item"
+        android:title="@string/calendarMenuItemUser"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:title="@string/configuracionContrasenia"
+        android:id="@+id/configuracionContrasenia"
+        android:icon="@drawable/icono_configuracion"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/acerdaDeItem"
+        android:icon="@drawable/icono_developer"
+        android:title="@string/acerdaDeItem"
+        app:showAsAction="ifRoom">
+    </item>
+</menu>

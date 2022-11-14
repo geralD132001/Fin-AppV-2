@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".Controller.Objetos.DetalleObjeto">
+    tools:context=".Controller.admin.DetalleObjeto">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -88,79 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <!--ICONO - TXT - UID USUARIO-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
 
-                <!--ICONO-->
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/uid_usuario"/>
-
-                <!--TXT-->
-                <TextView
-                    android:text="@string/uidUsuarioObjetoDetalleTXT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/worksans"
-                    android:textSize="20sp"
-                    android:layout_marginStart="10dp"/>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <!--DATO - UID USUARIO-->
-            <TextView
-                android:id="@+id/uidUsuarioObjetoDetalle"
-                android:text="@string/uidUsuarioObjetoDetalle"
-                android:fontFamily="@font/worksans"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <!--ICONO - TXT - CORREO-->
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <!--ICONO-->
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/correo_usuari0_detalle"/>
-
-                <!--TXT-->
-                <TextView
-                    android:text="@string/correoUsuarioObjetoDetalleTXT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/worksans"
-                    android:textSize="20sp"
-                    android:layout_marginStart="10dp"/>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <!--DATO - CORREO-->
-            <TextView
-                android:id="@+id/correoUsuarioObjetoDetalle"
-                android:text="@string/correoUsuarioObjetoDetalle"
-                android:fontFamily="@font/worksans"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
 
             <!--ICONO - TXT - TITULO-->
             <androidx.appcompat.widget.LinearLayoutCompat

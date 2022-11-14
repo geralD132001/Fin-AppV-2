@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.Objetos.ActualizarObjeto">
+    tools:context=".Controller.admin.ActualizarObjeto">
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -57,27 +57,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/worksans"
                 android:hint="@string/idUpdateObjeto"
-                android:textSize="18sp"
-                android:visibility="gone" />
-
-
-            <!-- UID DEL USUARIO -->
-            <TextView
-                android:id="@+id/uidUsuarioUpdateObjeto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/worksans"
-                android:hint="@string/uidUsuarioUpdateObjeto"
-                android:textSize="18sp"
-                android:visibility="gone" />
-
-            <!-- CORREO DEL USUARIO -->
-            <TextView
-                android:id="@+id/correoUsuarioUpdateObjeto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/worksans"
-                android:hint="@string/correoUsuarioUpdateObjeto"
                 android:textSize="18sp"
                 android:visibility="gone" />
 

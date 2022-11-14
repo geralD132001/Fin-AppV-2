@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.user.ConfiguracionUser">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/uidEliminarUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/worksans"
+            android:padding="10dp"
+            android:text="@string/uidEliminarUser"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/eliminarCuentaUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="20dp"
+            android:focusable="true"
+            android:fontFamily="@font/worksans"
+            android:padding="10dp"
+            android:text="@string/eliminarCuentaUser"
+            android:textSize="20sp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:drawableStartCompat="@drawable/icono_eliminar_cuenta" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">FindApp</string>
 
-    <!--MAIN ACTIVITY !-->
-    <string name="buttonLogin">Login</string>
-    <string name="buttonRegistro">Registro</string>
 
-    <!-- ACTIVITY REGISTRO -->
+    <!--MAIN ACTIVITY ADMIN !-->
+    <string name="buttonLoginLoginUserAdmin">Estudiante</string>
+    <string name="buttonLoginAdminDos">Administrador</string>
+
+    <!--MAIN ACTIVITY USER!-->
+    <string name="buttonLoginUser">Estudiante</string>
+    <string name="buttonLoginAdmin">Administrador</string>
+    <string name="buttonRegistroUser">Registro Estudiante</string>
+
+    <!-- ACTIVITY REGISTRO USER -->
     <string name="crearCuentaTXT">Crear una cuenta</string>
     <string name="nombreEditText">Nombres</string>
     <string name="correoEditText">Correo electrónico</string>
@@ -14,14 +20,30 @@
     <string name="buttonRegistrarUsuario">Registrar</string>
     <string name="tengoUnaCuentaTXT">Tengo una cuenta</string>
 
-    <!-- ACTIVIDAD LOGIN -->
+    <!-- ACTIVITY REGISTRO ADMIN -->
+    <string name="crearCuentaUserTXT">Crear una cuenta</string>
+    <string name="nombreEditTextUser">Nombres</string>
+    <string name="correoEditTextUser">Correo electrónico</string>
+    <string name="contraseniaEditTextUser">Contraseña</string>
+    <string name="confirmarContraseniaEditTextUser">Confirmar contraseña</string>
+    <string name="buttonRegistrarUsuarioUser">Registrar</string>
+    <string name="tengoUnaCuentaTXTUser">Tengo una cuenta</string>
+
+    <!-- ACTIVIDAD LOGIN ADMIN-->
     <string name="iniciarSesionTXT">Iniciar Sesión</string>
     <string name="correoLogin">Correo</string>
     <string name="passLogin">Contraseña</string>
     <string name="btnLogeo">Ingresar</string>
     <string name="usuarioNuevoTXt">¿No tienes una cuenta?. Regístrate</string>
 
-    <!-- MENÚ PRINCIPAL-->
+    <!-- ACTIVIDAD LOGIN USER-->
+    <string name="iniciarSesionTXTUser">Iniciar Sesión</string>
+    <string name="correoLoginUser">Correo</string>
+    <string name="passLoginUser">Contraseña</string>
+    <string name="btnLogeoUser">Ingresar</string>
+    <string name="usuarioNuevoTXTUser">¿No tienes una cuenta?. Regístrate</string>
+
+    <!-- MENÚ PRINCIPAL ADMIN-->
     <string name="buttonCerrarSesion">Salir</string>
     <string name="bienvenidoPrincipal">Bienvenido(a)</string>
     <string name="uidPrincipal"> -- </string>
@@ -34,6 +56,97 @@
     <string name="buttonConfiguracion">Ajustes</string>
     <string name="buttonAcercaDe">Acerca de</string>
 
+
+    <!-- MENÚ PRINCIPAL USER-->
+    <string name="buttonCerrarSesionUser">Salir</string>
+    <string name="bienvenidoPrincipalUser">Bienvenido(a)</string>
+    <string name="uidPrincipalUser"> -- </string>
+    <string name="nombresPrincipalUser"> -- </string>
+    <string name="correoPrincipalUser"> -- </string>
+    <string name="estadoCuentaPrincipalUser">No Verificado</string>
+    <string name="buttonAgregarObjet">Mis notas</string>
+    <string name="buttonObjetosUser">Objetos</string>
+    <string name="buttonPerfilUsuarioUser">Perfil</string>
+    <string name="buttonConfiguracionUser">Ajustes</string>
+    <string name="buttonAcercaDeUser">Acerca de</string>
+    <string name="actualizarpassUser">Actualizar password</string>
+    <string name="listarNotasUser">Mis Notas</string>
+    <string name="importantesUser">Importantes</string>
+    <string name="agregarNotasUser">Agregar</string>
+    <string name="agregarNotasUserMenu">Agregar</string>
+    <string name="calendarMenuItemUser">Calendar</string>
+
+    <string name="buscarObjetosMenuUser">Buscar Contactos</string>
+    <string name="filtrarObjetosMenuUser">Filtrar objetos</string>
+    <string name="filtrarNotasMenuUser">Filtrar notas</string>
+    <string name="vaciarTodasLasNotasMenuUser">Vaciar todas las notas</string>
+    <string name="actualizarNotaMenuUser">Actualizar nota</string>
+    <string name="configuracionContrasenia">Configuración</string>
+    <string name="acerdaDeItem">Acerca de</string>
+
+    <!-- DETALLE NOTA -->
+    <string name="idNotaDetalleTXTUser">Id de la nota:</string>
+    <string name="idNotaDetalleUser">Id nota</string>
+    <string name="uidUsuarioDetalleTXTUser">Uid usuario</string>
+    <string name="uidUsuarioDetalleUser">Uid usuario</string>
+    <string name="correoUsuarioDetalleTXTUser">Correo usuario</string>
+    <string name="correoUsuarioDetalleUser">Correo usuario</string>
+    <string name="tituloDetalleTXTUser">Título</string>
+    <string name="tituloDetalleUser">Título</string>
+    <string name="descripcionDetalleTXTUser">Descripción</string>
+    <string name="descripcionDetalleUser">Descripcion</string>
+    <string name="fechaRegistroDetalleTXTUser">Fecha registro</string>
+    <string name="fechaRegistroDetalleUser">Fecha registro</string>
+    <string name="fechaNotaDetalleTXTUser">Fecha nota</string>
+    <string name="fechaNotaDetalleUser">Fecha nota</string>
+    <string name="estadoDetalleTXTUser">Estado</string>
+    <string name="estadoDetalleUser">Estado</string>
+    <string name="buttonImportanteUser">Importante</string>
+
+    <!-- DETALLE NOTA -->
+    <string name="idNotaDetalleTXTAdmin">Id de la nota:</string>
+    <string name="idNotaDetalleAdmin"> -- </string>
+    <string name="uidUsuarioDetalleTXTAdmin">Uid usuario</string>
+    <string name="uidUsuarioDetalleAdmin"> -- </string>
+    <string name="correoUsuarioDetalleTXTAdmin">Correo usuario</string>
+    <string name="correoUsuarioDetalleAdmin"> -- </string>
+    <string name="tituloDetalleTXTAdmin">Título</string>
+    <string name="tituloDetalleAdmin"> -- </string>
+    <string name="descripcionDetalleTXTAdmin">Descripción</string>
+    <string name="descripcionDetalleAdmin"> -- </string>
+    <string name="fechaRegistroDetalleTXTAdmin">Fecha registro</string>
+    <string name="fechaRegistroDetalleAdmin"> -- </string>
+    <string name="fechaNotaDetalleTXTAdmin">Fecha nota</string>
+    <string name="fechaNotaDetalleAdmin"> -- </string>
+    <string name="estadoDetalleTXTAdmin">Estado</string>
+    <string name="estadoDetalleAdmin"> -- </string>
+    <string name="buttonImportanteAdmin">Importante</string>
+
+    <!-- CUADRO DE DIALOGO ELIMINAR NOTA IMPORTANTE USUARIO COMÚN-->
+    <string name="eliminarNotaImportanteTXTUser">¿Desea eliminar ésta nota importante de la lista?</string>
+    <string name="eliminarNotaUser">Eliminar</string>
+    <string name="eliminarNotaCancelarUser">Cancelar</string>
+
+    <!-- CUADRO DE DIALOGO ELIMINAR NOTA IMPORTANTE ADMIN-->
+    <string name="eliminarNotaImportanteTXTAdmin">¿Desea eliminar ésta nota importante de la lista?</string>
+    <string name="eliminarNotaAdmin">Eliminar</string>
+    <string name="eliminarNotaCancelarAdmin">Cancelar</string>
+
+
+    <!-- CUADRO DE DÍALOGO - FILTRAR NOTAS - USER COMÚN -->
+    <string name="FiltroTXTuser">Filtrar notas: </string>
+    <string name="todasNotasUser">Todas</string>
+    <string name="notasFinalizadasUser">Finalizadas</string>
+    <string name="notasNoFinalizadasUser">No Finalizadas</string>
+
+
+    <!-- CUADRO DE DÍALOGO - FILTRAR NOTAS - ADMIN -->
+    <string name="FiltroTXTAdmin">Filtrar notas: </string>
+    <string name="todasNotasAdmin">Todas</string>
+    <string name="notasFinalizadasAdmin">Finalizadas</string>
+    <string name="notasNoFinalizadasAdmin">No Finalizadas</string>
+
+
     <!-- CUADRO DE DIALOGO - CUENTA VERIFICADA -->
     <string name="cuentaVerificada">Cuenta Verificada</string>
     <string name="entendidoVerificado">Entendido</string>
@@ -44,7 +157,7 @@
     <string name="versionApp">Versión: 1.0</string>
     <string name="entendidoInfo">Entendido</string>
 
-    <!-- Perfil del usuario -->
+    <!-- Perfil del usuario admin -->
     <string name="uidPerfil">Uid</string>
     <string name="nombresPerfil">Mis nombres</string>
     <string name="apellidosPerfil">Mis apellidos</string>
@@ -59,11 +172,41 @@
     <string name="fechaNacimientoPerfil">Fecha de nacimiento</string>
     <string name="guardarDatos">Guardar Datos</string>
 
+    <!-- Perfil del usuario común -->
+    <string name="uidPerfilUser">Uid</string>
+    <string name="nombresPerfilUser">Mis nombres</string>
+    <string name="apellidosPerfilUser">Mis apellidos</string>
+    <string name="correoPerfilUser">Correo</string>
+    <string name="edadPerfilUser">Edad</string>
+    <string name="telefonoPerfilUser">Teléfono</string>
+    <string name="domicilioPerfilUser">Domicilio</string>
+    <string name="universidadPerfilUser">Universidad</string>
+    <string name="facultadPerfilUser">Facultad</string>
+    <string name="carreraPerfilUser">Carrera</string>
+    <string name="numeroDocumentoUser">Número documento</string>
+    <string name="tipoDocumentoUser">Tipo documento</string>
+    <string name="fechaNacimientoPerfilUser">Fecha de nacimiento</string>
+    <string name="guardarDatosUser">Guardar Datos</string>
+
+
+    <!-- CUADRO DE DÍALOGO - AUTENTICACIÓN - USUARIO COMÚN -->
+    <string name="importanteTXTAuthUser">Lea con atención</string>
+    <string name="mensajeTXTAuthUser">Para realizar la eliminación de su cuenta, tendrá que cerrar sesión, luego logearse, y en un lapzo de 5 minutos podrá eliminar su cuenta de nuestrá aplicación, una vez pasado ese tiempo, tendrá que realizar nuevamente los pasos mencionados</string>
+    <string name="buttonEntendidoAuthUser">Entendido</string>
+    <string name="buttonCerarSesionAuthUser">Cerrar sesión</string>
+
+    <!-- CUADRO DE DÍALOGO - AUTENTICACIÓN - ADMIN -->
+    <string name="importanteTXTAuthAdmin">Lea con atención</string>
+    <string name="mensajeTXTAuthAdmin">Para realizar la eliminación de su cuenta, tendrá que cerrar sesión, luego logearse, y en un lapzo de 5 minutos podrá eliminar su cuenta de nuestrá aplicación, una vez pasado ese tiempo, tendrá que realizar nuevamente los pasos mencionados</string>
+    <string name="buttonEntendidoAuthAdmin">Entendido</string>
+    <string name="buttonCerarSesionAuthAdmin">Cerrar sesión</string>
+
+
     <!-- CUADRO DE DIALOGO ESTABLECER TELEFONO -->
     <string name="establecerTelefono">Escriba su telefono</string>
     <string name="buttonAceptarTelefono">Aceptar</string>
 
-    <!-- Cambiar Password -->
+    <!-- Cambiar Password Usuario Común -->
     <string name="actualPassTXT">Contraseña actual: </string>
     <string name="actualPass"> -- </string>
     <string name="etActualPass">Contraseña actual</string>
@@ -71,14 +214,31 @@
     <string name="etRepetirNuevoPass">Repetir nueva contraseña</string>
     <string name="buttonActualizarPass">Actualizar</string>
 
-    <!-- Perfil de usuario Imagen de perfil -->
-    <string name="buttonImagenDe">Elegir imagen de</string>
-    <string name="buttonActualizarImagen">Acutalizar imagen</string>
+    <!-- Cambiar Password Admin -->
+    <string name="actualPassTXTAdmin">Contraseña actual: </string>
+    <string name="actualPassAdmin"> -- </string>
+    <string name="etActualPassAdmin">Contraseña actual</string>
+    <string name="etNuevoPassAdmin">Nueva contraseña</string>
+    <string name="etRepetirNuevoPassAdmin">Repetir nueva contraseña</string>
+    <string name="buttonActualizarPassAdmin">Actualizar</string>
 
-    <!-- CUADRO DE DIALOGO - ELEGIR IMAGEN DE -->
+    <!-- Perfil de administrador Imagen de perfil -->
+    <string name="buttonImagenDe">Elegir imagen de</string>
+    <string name="buttonActualizarImagen">Actualizar imagen</string>
+
+    <!-- Perfil de usuario común Imagen de perfil -->
+    <string name="buttonImagenDeUser">Elegir imagen de</string>
+    <string name="buttonActualizarImagenUser">Actualizar imagen</string>
+
+    <!-- CUADRO DE DIALOGO - ELEGIR IMAGEN DE - ADMIN -->
     <string name="elegirImagenTXT">Elegir imagen de:</string>
     <string name="buttonElegirGaleria">Galería</string>
     <string name="buttonElegirCamara">Cámara</string>
+
+    <!-- CUADRO DE DIALOGO - ELEGIR IMAGEN DE  - USER -->
+    <string name="elegirImagenTXTUser">Elegir imagen de:</string>
+    <string name="buttonElegirGaleriaUser">Galería</string>
+    <string name="buttonElegirCamaraUser">Cámara</string>
 
     <!-- Agregar Objeto -->
     <string name="uidUsuarioAddObjeto">Uid del Usuario</string>
@@ -116,13 +276,94 @@
     <string name="buttonValidarRegistroObjeto">Entendido</string>
 
     <!-- MENÚ -->
-    <string name="agregarObjetoMenu">Agregar Contacto</string>
-    <string name="actualizatObjetoMenu">Actualizar Contacto</string>
+    <string name="agregarNotaMenuAdmin">Agendar</string>
+    <string name="agendarNotaAdmin">Agregar</string>
+    <string name="actualizarObjetoMenu">Actualizar Contacto</string>
     <string name="agregarObjetoMenu2">Agregar Contacto</string>
     <string name="vaciarObjetosMenu">Eliminar todos los contactos</string>
     <string name="buscarObjetosMenu">Buscar Contactos</string>
     <string name="filtrarObjetos">Filtrar objetos</string>
+    <string name="buttonPerfilMenuAdmin">Perfil</string>
+    <string name="cerrarSesionItemAdmin">Cerrar sesión</string>
+    <string name="acerdaDeItemAdmin">Acerca de</string>
+    <string name="listarNotasMenuAdmin">Mis Notas</string>
+    <string name="importantesMenuAdmin">Importantes</string>
+    <string name="buttonConfiguracionAdmin">Ajustes</string>
+    <string name="calendarMenuItemAdmin">Calendar</string>
+    <string name="buttonCerrarSesionAdmin">Salir</string>
+    <string name="filtrarNotasMenuAdmin">Filtrar notas</string>
+    <string name="vaciarTodasLasNotasMenuAdmin">Vaciar todas las notas</string>
+    <string name="actualizarpassAdmin">Actualizar password</string>
 
+    <!-- Configuración Usuario común -->
+    <string name="uidEliminarUser">Uid del usuario</string>
+    <string name="eliminarCuentaUser">Eliminar mi cuenta</string>
+
+    <!-- Configuración admin -->
+    <string name="uidEliminarAdmin">Uid del usuario</string>
+    <string name="eliminarCuentaAdmin">Eliminar mi cuenta</string>
+
+    <!-- Agregar Nota usuario común -->
+    <string name="uidUsuarioAddNote">Uid del Usuario</string>
+    <string name="correoUsuarioAddNote">Correo de usuario</string>
+    <string name="fechaHoraActualTXTAddNote">Fecha de registro</string>
+    <string name="fechaHoraActualAddNote">Fecha y Hora Actual</string>
+    <string name="tituloAddNote">Título</string>
+    <string name="descripcionAddNote">Descripción</string>
+    <string name="btnCalendarioAddNote">Calendario</string>
+    <string name="fechaAddNote">00/00/00</string>
+    <string name="estadoAddNote">No finalizado</string>
+
+    <!-- Agregar Nota usuario admin -->
+    <string name="uidAdminAddNote">Uid del Usuario</string>
+    <string name="correoAdminAddNote">Correo de usuario</string>
+    <string name="fechaHoraActualAdminTXTAddNote">Fecha de registro</string>
+    <string name="fechaHoraActualAdminAddNote">Fecha y Hora Actual</string>
+    <string name="tituloAdminAddNote">Título</string>
+    <string name="descripcionAdminAddNote">Descripción</string>
+    <string name="btnCalendarioAdminAddNote">Calendario</string>
+    <string name="fechaAdminAddNote">00/00/00</string>
+    <string name="estadoAdminAddNote">No finalizado</string>
+
+    <!-- ITEM NOTA USUARIO COMÚN -->
+    <string name="idNotaItemUser">Id Nota</string>
+    <string name="uidUsuarioNoteItemUser">Uid del usuario</string>
+    <string name="correoUsuarioNoteItemUser">Correo de usuario</string>
+    <string name="fechaHoraRegistroNoteItemUser">Fecha y Hora registro</string>
+    <string name="tituloNoteItemUser">Título</string>
+    <string name="descripcionNoteItemUser">Descripción</string>
+    <string name="fechaNoteItemUser">00/00/00</string>
+    <string name="estadoNoteItemUser">No finalizado</string>
+
+    <!-- ITEM NOTA ADMIN  -->
+    <string name="idNotaItemAdmin">Id Nota</string>
+    <string name="uidUsuarioNoteItemAdmin">Uid del usuario</string>
+    <string name="correoUsuarioNoteItemAdmin">Correo de usuario</string>
+    <string name="fechaHoraRegistroNoteItemAdmin">Fecha y Hora registro</string>
+    <string name="tituloNoteItemAdmin">Título</string>
+    <string name="descripcionNoteItemAdmin">Descripción</string>
+    <string name="fechaNoteItemAdmin">00/00/00</string>
+    <string name="estadoNoteItemAdmin">No finalizado</string>
+
+    <!-- ITEM NOTA IMPORTANTE USUARIO COMÚN -->
+    <string name="idNotaItemUserImportante">Id Nota</string>
+    <string name="uidUsuarioNoteItemUserImportante">Uid del usuario</string>
+    <string name="correoUsuarioNoteItemUserImportante">Correo de usuario</string>
+    <string name="fechaHoraRegistroNoteItemUserImportante">Fecha y Hora registro</string>
+    <string name="tituloNoteItemUserImportante">Título</string>
+    <string name="descripcionNoteItemUserImportante">Descripción</string>
+    <string name="fechaNoteItemUserImportante">00/00/00</string>
+    <string name="estadoNoteItemUserImportante">No finalizado</string>
+
+    <!-- ITEM NOTA IMPORTANTE ADMIN -->
+    <string name="idNotaItemAdminImportante">Id Nota</string>
+    <string name="uidUsuarioNoteItemAdminImportante">Uid del usuario</string>
+    <string name="correoUsuarioNoteItemAdminImportante">Correo de usuario</string>
+    <string name="fechaHoraRegistroNoteItemAdminImportante">Fecha y Hora registro</string>
+    <string name="tituloNoteItemAdminImportante">Título</string>
+    <string name="descripcionNoteItemAdminImportante">Descripción</string>
+    <string name="fechaNoteItemAdminImportante">00/00/00</string>
+    <string name="estadoNoteItemAdminImportante">No finalizado</string>
 
     <!-- spinner -->
     <string-array name="estadosObjetos">
@@ -131,8 +372,44 @@
         <item>Encontrado</item>
     </string-array>
 
+    <!-- ACTUALIZAR NOTA USER -->
+    <string name="idNotaUpdateUser">Id nota</string>
+    <string name="uidNotaUpdateUser">Uid del Usuario</string>
+    <string name="correoNotaUpdateUser">Correo de usuario</string>
+    <string name="fechaRegistroNotaUpdateUser">Fecha de registro</string>
+    <string name="tituloNotaUpdateUser">Título</string>
+    <string name="descripcionNotaUpdateUser">Descripción</string>
+    <string name="btnCalendarioNotaUpdateUser">Calendario</string>
+    <string name="fechaPerdidaNotaUpdateUser">00/00/00</string>
+    <string name="estadoNotaUpdateUser">No finalizado</string>
+    <string name="estadoNuevoNotaUpdateUser"> -- </string>
 
-    <!-- DETALLE OBJETO -->
+    <!-- ACTUALIZAR NOTA ADMIN -->
+    <string name="idNotaUpdateAdmin">Id nota</string>
+    <string name="uidNotaUpdateAdmin">Uid del Usuario</string>
+    <string name="correoNotaUpdateAdmin">Correo de usuario</string>
+    <string name="fechaRegistroNotaUpdateAdmin">Fecha de registro</string>
+    <string name="tituloNotaUpdateAdmin">Título</string>
+    <string name="descripcionNotaUpdateAdmin">Descripción</string>
+    <string name="btnCalendarioNotaUpdateAdmin">Calendario</string>
+    <string name="fechaPerdidaNotaUpdateAdmin">00/00/00</string>
+    <string name="estadoNotaUpdateAdmin">No finalizado</string>
+    <string name="estadoNuevoNotaUpdateAdmin"> -- </string>
+
+    <!-- spinner -->
+    <string-array name="estadosNotaUserUpdate">
+        <item>No finalizado</item>
+        <item>Finalizado</item>
+    </string-array>
+
+    <!-- spinner -->
+    <string-array name="estadosNotaAdminUpdate">
+        <item>No finalizado</item>
+        <item>Finalizado</item>
+    </string-array>
+
+
+    <!-- DETALLE OBJETO ADMIN-->
     <string name="detalleObjetoTXT">Detalle del objeto</string>
     <string name="idObjetoDetalleTXT">Id del objeto</string>
     <string name="idObjetoDetalle"> -- </string>
@@ -159,7 +436,23 @@
     <string name="llamarContactoObjetoDetalle">Llamar</string>
     <string name="mensajeObjetoContactoDetalle">Mensaje</string>
 
-    <!-- ITEM OBJETO -->
+    <!-- DETALLE OBJETO USER -->
+    <string name="detalleObjetoTXTUser">Detalle del objeto</string>
+    <string name="idObjetoDetalleUser"> -- </string>
+    <string name="uidUsuarioObjetoDetalleUser">--</string>
+    <string name="correoUsuarioObjetoDetalleUser"> -- </string>
+    <string name="fechaRegistroObjetoDetalleUser"> -- </string>
+    <string name="tituloObjetoDetalleUser"> -- </string>
+    <string name="descripcionObjetoDetalleUser"> -- </string>
+    <string name="telefonoContactoDetalleUser"> -- </string>
+    <string name="categoriaObjetoDetalleUser"> -- </string>
+    <string name="lugarPerdidaObjetoDetalleUser"> -- </string>
+    <string name="fechaPerdidaObjetoDetalleUser"> -- </string>
+    <string name="estadoObjetoDetalleUser"> -- </string>
+    <string name="llamarContactoObjetoDetalleUser">Llamar</string>
+    <string name="mensajeObjetoContactoDetalleUser">Mensaje</string>
+
+    <!-- ITEM OBJETO ADMIN -->
     <string name="idObjetoItem">Id Objeto</string>
     <string name="uidUsuarioObjetoItem">Uid objeto</string>
     <string name="correoUsuarioObjetoItem">Correo</string>
@@ -172,10 +465,27 @@
     <string name="fechaPerdidaObjetoItem">00/00/00</string>
     <string name="estadoObjetoItem">Perdido</string>
 
-    <!-- CUADRO DE DIALOGO OPCIONES -->
+
+    <!-- ITEM OBJETO USER -->
+    <string name="idObjetoItemUser">Id Objeto</string>
+    <string name="fechaHoralActualItemUser">Fecha hora actual</string>
+    <string name="tituloObjetoItemUser">Título</string>
+    <string name="descripcionObjetoItemUser">Descripción</string>
+    <string name="categoriaObjetoItemUser">Categoria</string>
+    <string name="lugarPerdidaObjetoItemUser">Lugar de perdida</string>
+    <string name="telefonoContactoObjetoItemUser">Teléfono contacto</string>
+    <string name="fechaPerdidaObjetoItemUser">00/00/00</string>
+    <string name="estadoObjetoItemUser">Perdido</string>
+
+    <!-- CUADRO DE DIALOGO OPCIONES OBJETO ADMIN  -->
     <string name="elijaOpcionTXT">Elija una opción</string>
     <string name="buttonEliminarObject">Eliminar</string>
     <string name="buttonActualizarObject">Actualizar</string>
+
+    <!-- CUADRO DE DIALOGO OPCIONES NOTA USER COMÚN -->
+    <string name="elijaOpcionTXTNotaUser">Elija una opción</string>
+    <string name="buttonEliminarNotaUser">Eliminar</string>
+    <string name="buttonActualizarNotaUser">Actualizar</string>
 
     <!-- CUADRO DE DÍALOGO - FILTRAR NOTAS -->
     <string name="filtroTXT">Filtrar objetos: </string>
@@ -183,4 +493,16 @@
     <string name="objetosPerdidos">Perdidos</string>
     <string name="objetosEcontrados">Econtrados</string>
     <string name="objetosEntregados">Entregados</string>
+
+
+    <!-- CUADRO DE DÍALOGO - MOSTRAR FECHA ADMIN -->
+    <string name="txtHoyAdmin">Hoy es: </string>
+    <string name="fechaHoyAdmin"> -- </string>
+    <string name="btnCerrarCuadradiAdmin">Cerrar</string>
+
+    <!-- CUADRO DE DÍALOGO - MOSTRAR FECHA USUARIOS COMÚN -->
+    <string name="txtHoyUser">Hoy es: </string>
+    <string name="fechaHoyUser"> -- </string>
+    <string name="btnCerrarCuadradiUser">Cerrar</string>
+
 </resources>

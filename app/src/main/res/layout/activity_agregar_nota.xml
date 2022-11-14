@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.user.AgregarNota">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- UID DEL USUARIO -->
+        <TextView
+            android:id="@+id/uidUsuarioAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksans"
+            android:hint="@string/uidUsuarioAddNote"
+            android:visibility="gone"
+            android:textSize="18sp" />
+
+        <!-- CORREO DEL USUARIO -->
+        <TextView
+            android:id="@+id/correoUsuarioAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:fontFamily="@font/worksans"
+            android:hint="@string/correoUsuarioAddNote"
+            android:textSize="18sp" />
+
+        <!-- ICONO - TEXTVIEW -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/fecha_hora_registro"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fechaHoraActualTXTAddNote"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/worksans"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- FECHA Y HORA ACTUAL DEL DISPOSITIVO -->
+        <TextView
+            android:id="@+id/fechaHoraActualAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksans"
+            android:hint="@string/fechaHoraActualAddNote"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/tituloAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksans"
+            android:hint="@string/tituloAddNote"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/descripcionAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/worksans"
+            android:gravity="start"
+            android:hint="@string/descripcionAddNote"
+            android:minHeight="150dp"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- BOTÓN PARA ABRIR CALENDARIO -->
+            <Button
+                android:id="@+id/btnCalendarioAddNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnCalendarioAddNote"
+                app:icon="@drawable/icono_calendario" />
+
+            <!-- VISUALIZAR FECHA ELEGIDA -->
+            <TextView
+                android:id="@+id/fechaAddNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/worksans"
+                android:hint="@string/fechaAddNote"
+                android:textSize="20sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- ESTADO DE LA NOTA -->
+        <TextView
+            android:id="@+id/estadoAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/worksans"
+            android:text="@string/estadoAddNote"
+            android:textSize="25sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>

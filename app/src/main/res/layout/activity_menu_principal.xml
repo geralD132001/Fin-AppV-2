@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.MenuPrincipal">
+    tools:context=".Controller.admin.MenuPrincipalAdmin">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -28,12 +28,14 @@
                 android:weightSum="4 ">
 
                 <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imagenPerfilAdmin"
                     android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
                     android:layout_weight="1"
                     android:layout_gravity="center"
                     android:layout_marginStart="2dp"
-                    android:src="@drawable/imagen_perfil_usuario"/>
+                    android:src="@drawable/imagen_usuario_admin"/>
 
                 <!-- Datos -->
                 <androidx.appcompat.widget.LinearLayoutCompat
@@ -240,6 +242,69 @@
                 android:orientation="horizontal"
                 android:weightSum="2">
 
+                <!-- OPCION 1 -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/agregar" />
+
+                    <Button
+                        android:id="@+id/agregarNotaMenuAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/agregarNotaMenuAdmin" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!-- OPCION 2 -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/lista" />
+
+                    <Button
+                        android:id="@+id/listarNotasMenuAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/listarNotasMenuAdmin" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- 5 -6 -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
                 <!-- OPCION 3 -->
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"
@@ -255,18 +320,18 @@
                         android:src="@drawable/usuario_icon" />
 
                     <Button
-                        android:id="@+id/buttonPerfilUsuario"
+                        android:id="@+id/buttonPerfilMenuAdmin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/buttonPerfilUsuario" />
+                        android:text="@string/buttonPerfilMenuAdmin" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
-                <!-- OPCION 4 -->
+                <!-- OPCION 3 -->
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -278,16 +343,16 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/icons_config" />
+                        android:src="@drawable/archivados" />
 
                     <Button
-                        android:id="@+id/buttonConfiguracion"
+                        android:id="@+id/importantesMenuAdmin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/buttonConfiguracion" />
+                        android:text="@string/importantesMenuAdmin" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -302,7 +367,7 @@
                 android:orientation="horizontal"
                 android:weightSum="2">
 
-                <!-- OPCION 5 -->
+                <!-- OPCION 3 -->
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -314,16 +379,16 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/acerca_de" />
+                        android:src="@drawable/icons_config" />
 
                     <Button
-                        android:id="@+id/buttonAcercaDe"
+                        android:id="@+id/buttonConfiguracionAdmin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/buttonAcercaDe" />
+                        android:text="@string/buttonConfiguracionAdmin" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -343,18 +408,19 @@
                         android:src="@drawable/cerrar_sesion2" />
 
                     <Button
-                        android:id="@+id/buttonCerrarSesion"
+                        android:id="@+id/buttonCerrarSesionAdmin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:enabled="false"
                         android:fontFamily="@font/worksans"
-                        android:text="@string/buttonCerrarSesion" />
+                        android:text="@string/buttonCerrarSesionAdmin" />
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
+
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

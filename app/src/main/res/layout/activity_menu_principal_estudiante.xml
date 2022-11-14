@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.user.MenuPrincipalEstudiante">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:padding="0.2dp"
+            app:cardBackgroundColor="#5499c7"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4 ">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/imagen_perfil_usuario" />
+
+                <!-- Datos -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/bienvenidoPrincipal"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarDatosUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp" />
+
+                    <!-- UID -->
+                    <TextView
+                        android:id="@+id/uidPrincipalUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/uidPrincipalUser"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <!-- NOMBRES-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/linearNombresUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <!-- ICONO -->
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icono_persona" />
+
+                        <!-- NOMBRES -->
+                        <TextView
+                            android:id="@+id/nombresPrincipalUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:fontFamily="@font/worksans"
+                            android:text="@string/nombresPrincipalUser"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <!-- CORREO -->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/linearCorreoUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <!-- ICONO -->
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/correo_menu" />
+
+                        <!-- CORREO -->
+                        <TextView
+                            android:id="@+id/correoPrincipalUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:fontFamily="@font/worksans"
+                            android:text="@string/correoPrincipalUser"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <!-- VERIFICACIÓN -->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/linearVerificacionUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <!-- ICONO -->
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/verificacion_principal" />
+
+                        <!-- ESTADO -->
+                        <Button
+                            android:id="@+id/estadoCuentaPrincipalUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:backgroundTint="#607d8b"
+                            android:fontFamily="@font/worksans"
+                            android:text="@string/estadoCuentaPrincipalUser"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 1 -2 -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- OPCION 2 -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/objects_icon" />
+
+                    <Button
+                        android:id="@+id/buttonObjetosUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/buttonObjetosUser" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <!-- OPCION 1 -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/agregar" />
+
+                    <Button
+                        android:id="@+id/agregarNotasUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/agregarNotasUser" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- 3 -4 -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!-- OPCION 2 -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/lista" />
+
+                    <Button
+                        android:id="@+id/listarNotasUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/listarNotasUser" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!-- OPCION 3 -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/archivados" />
+
+                    <Button
+                        android:id="@+id/importantesUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/importantesUser" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- 5 -6 -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- OPCION 3 -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/usuario_icon" />
+
+                    <Button
+                        android:id="@+id/buttonPerfilUsuarioUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/buttonPerfilUsuarioUser" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!-- OPCION 6 -->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/cerrar_sesion2" />
+
+                    <Button
+                        android:id="@+id/buttonCerrarSesionUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/buttonCerrarSesionUser" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>

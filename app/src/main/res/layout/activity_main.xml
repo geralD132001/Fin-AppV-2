@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivityAdmin">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -31,21 +31,21 @@
 
 
         <Button
-            android:id="@+id/buttonLogin"
+            android:id="@+id/buttonLoginLoginUserAdmin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/worksans"
-            android:text="@string/buttonLogin" />
+            android:text="@string/buttonLoginLoginUserAdmin" />
 
 
         <Button
-            android:id="@+id/buttonRegistro"
+            android:id="@+id/buttonLoginAdminDos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/worksans"
-            android:text="@string/buttonRegistro" />
+            android:text="@string/buttonLoginAdminDos" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

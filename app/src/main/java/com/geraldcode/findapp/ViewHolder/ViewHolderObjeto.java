@@ -47,11 +47,10 @@ public class ViewHolderObjeto extends RecyclerView.ViewHolder {
         });
     }
 
-    public void SetearDatos(Context context, String idObjeto, String uidUsuario, String correoUsuario, String fechaHoraActual, String titulo, String descripcion, String categoria, String lugarPerdida, String telefonoContacto, String fechaPerdida, String estado, String imagenObjeto) {
+    public void SetearDatos(Context context, String idObjeto, String fechaHoraActual, String titulo, String descripcion, String categoria, String lugarPerdida, String telefonoContacto, String fechaPerdida, String estado, String imagenObjeto) {
 
         // DECLARAR LAS VISTAS
-        TextView idUsuarioObjetoItem, uidUsuarioObjetoItem, correoUsuarioObjetoItem,
-                fechaHoraRegistroObjetoItem, tituloObjetoItem,
+        TextView idUsuarioObjetoItem, fechaHoraRegistroObjetoItem, tituloObjetoItem,
                 descripcionObjetoItem, categoriaObjetoItem,
                 lugarPerdidaObjetoItem, telefonoContactoOjetoItem,
                 fechaPerdidaObjetoItem, estadoObjetoItem;
@@ -62,8 +61,6 @@ public class ViewHolderObjeto extends RecyclerView.ViewHolder {
         objetoEncontrado = mView.findViewById(R.id.objetoEncontrado);
         objetoEntregado = mView.findViewById(R.id.objetoEntregado);
         idUsuarioObjetoItem = mView.findViewById(R.id.idObjetoItem);
-        uidUsuarioObjetoItem = mView.findViewById(R.id.uidUsuarioObjetoItem);
-        correoUsuarioObjetoItem = mView.findViewById(R.id.correoUsuarioObjetoItem);
         fechaHoraRegistroObjetoItem = mView.findViewById(R.id.fechaHoralActualItem);
         tituloObjetoItem = mView.findViewById(R.id.tituloObjetoItem);
         descripcionObjetoItem = mView.findViewById(R.id.descripcionObjetoItem);
@@ -76,8 +73,6 @@ public class ViewHolderObjeto extends RecyclerView.ViewHolder {
 
         // SETEAR LA INFORMACIÓN DENTRO DEL ITEM
         idUsuarioObjetoItem.setText(idObjeto);
-        uidUsuarioObjetoItem.setText(uidUsuario);
-        correoUsuarioObjetoItem.setText(correoUsuario);
         fechaHoraRegistroObjetoItem.setText(fechaHoraActual);
         tituloObjetoItem.setText(titulo);
         descripcionObjetoItem.setText(descripcion);

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.admin.ActualizarNotaAdmin">
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="10dp">
+
+    <!-- ID NOTA -->
+    <TextView
+        android:id="@+id/idNotaUpdateAdmin"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/worksans"
+        android:text="@string/idNotaUpdateAdmin"
+        android:textSize="18sp" />
+    <!-- UID DEL USUARIO -->
+    <TextView
+        android:id="@+id/uidNotaUpdateAdmin"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/worksans"
+        android:hint="@string/uidNotaUpdateAdmin"
+        android:textSize="18sp" />
+
+    <!-- CORREO DEL USUARIO -->
+    <TextView
+        android:id="@+id/correoNotaUpdateAdmin"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/worksans"
+        android:hint="@string/correoNotaUpdateAdmin"
+        android:textSize="18sp" />
+
+    <!-- FECHA Y HORA ACTUAL DEL DISPOSITIVO -->
+    <TextView
+        android:id="@+id/fechaRegistroNotaUpdateAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:fontFamily="@font/worksans"
+        android:hint="@string/fechaRegistroNotaUpdateAdmin"
+        android:textSize="18sp" />
+
+
+    <!-- ESTADO DE LA NOTA -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/tareaFinalizadaUpdateAdmin"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:background="#16A085"
+          android:visibility="gone" />
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/tareaNoFinalizadaUpdateAdmin"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="5dp"
+          android:background="#E74C3C"
+          android:visibility="gone" />
+
+      <TextView
+          android:id="@+id/estadoNotaUpdateAdmin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="5dp"
+          android:fontFamily="@font/worksans"
+          android:text="@string/estadoNotaUpdateAdmin"
+          android:textSize="25sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <EditText
+        android:id="@+id/tituloNotaUpdateAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/worksans"
+        android:hint="@string/tituloNotaUpdateAdmin"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/descripcionNotaUpdateAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/worksans"
+        android:gravity="start"
+        android:hint="@string/descripcionNotaUpdateAdmin"
+        android:minHeight="150dp"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+      <!-- BOTÓN PARA ABRIR CALENDARIO -->
+      <Button
+          android:id="@+id/btnCalendarioNotaUpdateAdmin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/btnCalendarioNotaUpdateAdmin"
+          app:icon="@drawable/icono_calendario" />
+
+      <!-- VISUALIZAR FECHA ELEGIDA -->
+      <TextView
+          android:id="@+id/fechaPerdidaNotaUpdateAdmin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="15dp"
+          android:fontFamily="@font/worksans"
+          android:hint="@string/fechaPerdidaNotaUpdateAdmin"
+          android:textSize="20sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp">
+
+      <Spinner
+          android:id="@+id/spinnerEstadoNotaUpdateAdmin"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+
+      <TextView
+          android:id="@+id/estadoNuevoNotaUpdateAdmin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/estadoNuevoNotaUpdateAdmin" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>

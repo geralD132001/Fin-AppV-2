@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.ActualizarPassword.ActualizarPassUsuario">
+    tools:context=".Controller.user.ActualizarPassUsuario">
 
   <androidx.appcompat.widget.LinearLayoutCompat
       android:layout_width="match_parent"
@@ -95,7 +95,7 @@
 
     <Button
         android:id="@+id/buttonActualizarPass"
-        android:layout_width="180dp"
+        android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"

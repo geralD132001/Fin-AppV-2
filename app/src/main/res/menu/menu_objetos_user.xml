@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:icon="@drawable/icono_buscar_contactos"
+        app:showAsAction="ifRoom"
+        android:id="@+id/buscarObjetosMenuUser"
+        android:title="@string/buscarObjetosMenuUser"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+    </item>
+
+    <item
+        android:title="@string/filtrarObjetosMenuUser"
+        android:id="@+id/filtrarObjetosMenuUser"
+        android:icon="@drawable/icono_filtrar"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+
+</menu>

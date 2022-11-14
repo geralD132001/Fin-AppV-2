@@ -2,15 +2,13 @@ package com.geraldcode.findapp.Model;
 
 public class Objeto {
 
-    String idObjeto, uidUsuario, correoUsuario, fechaHoraActual, titulo, descripcion, categoria, lugarPerdida, telefonoContacto, fechaPerdida, estado, imagenObjeto;
+    String idObjeto,fechaHoraActual, titulo, descripcion, categoria, lugarPerdida, telefonoContacto, fechaPerdida, estado, imagenObjeto;
 
     public Objeto(){
     }
 
-    public Objeto(String idObjeto, String uidUsuario, String correoUsuario, String fechaHoraActual, String titulo, String descripcion, String categoria, String lugarPerdida, String telefonoContacto, String fechaPerdida, String estado, String imagenObjeto) {
+    public Objeto(String idObjeto, String fechaHoraActual, String titulo, String descripcion, String categoria, String lugarPerdida, String telefonoContacto, String fechaPerdida, String estado, String imagenObjeto) {
         this.idObjeto = idObjeto;
-        this.uidUsuario = uidUsuario;
-        this.correoUsuario = correoUsuario;
         this.fechaHoraActual = fechaHoraActual;
         this.titulo = titulo;
         this.descripcion = descripcion;
@@ -28,22 +26,6 @@ public class Objeto {
 
     public void setIdObjeto(String idObjeto) {
         this.idObjeto = idObjeto;
-    }
-
-    public String getUidUsuario() {
-        return uidUsuario;
-    }
-
-    public void setUidUsuario(String uidUsuario) {
-        this.uidUsuario = uidUsuario;
-    }
-
-    public String getCorreoUsuario() {
-        return correoUsuario;
-    }
-
-    public void setCorreoUsuario(String correoUsuario) {
-        this.correoUsuario = correoUsuario;
     }
 
     public String getFechaHoraActual() {

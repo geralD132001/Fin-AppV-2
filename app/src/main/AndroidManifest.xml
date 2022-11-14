@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,41 +18,101 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icono_find_app_round"
         android:supportsRtl="true"
+        android:testOnly="false"
         android:theme="@style/Theme.FindApp"
-        tools:targetApi="31"
-        android:testOnly="false">
+        tools:targetApi="31">
         <activity
-            android:name=".Controller.Objetos.ActualizarObjeto"
+            android:name=".Controller.admin.ActualizarPassAdmin"
             android:exported="false" />
         <activity
-            android:name=".Controller.Objetos.DetalleObjeto"
+            android:name=".Controller.admin.DetalleNotaAdmin"
             android:exported="false" />
         <activity
-            android:name=".Controller.Perfil.EditarImagenPerfil"
+            android:name=".Controller.admin.NotasImportantesAdmin"
             android:exported="false" />
         <activity
-            android:name=".Controller.ActualizarPassword.ActualizarPassUsuario"
+            android:name=".Controller.admin.ActualizarNotaAdmin"
             android:exported="false" />
         <activity
-            android:name=".Controller.Perfil.PerfilUsuario"
+            android:name=".Controller.admin.ListarNotasAdmin"
             android:exported="false" />
         <activity
-            android:name=".Controller.Configuration.Configuracion"
+            android:name=".Controller.admin.AgregarNotaAdmin"
             android:exported="false" />
         <activity
-            android:name=".Controller.Objetos.ListarObjetos"
+            android:name=".Controller.user.DetalleNota"
             android:exported="false" />
         <activity
-            android:name=".Controller.Objetos.AgregarObjeto"
+            android:name=".Controller.user.ActualizarNota"
             android:exported="false" />
         <activity
-            android:name=".Controller.MenuPrincipal"
+            android:name=".Controller.user.EditarImagenPerfilUser"
             android:exported="false" />
         <activity
-            android:name=".Controller.Registro"
+            android:name=".Controller.user.DetalleObjetoUser"
             android:exported="false" />
         <activity
-            android:name=".Controller.Login"
+            android:name=".Controller.user.PerfilUserCommon"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.user.ListObjectsUser"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.user.NotasImportantes"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.user.ListarNotas"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.user.AgregarNota"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.user.ConfiguracionUser"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.user.RegistroEstudiante"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.user.LoginEstudiante"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityEstudiante"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.user.MenuPrincipalEstudiante"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.MenuPrincipalAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.ActualizarObjeto"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.DetalleObjeto"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.EditarImagenPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.user.ActualizarPassUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.PerfilUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.Configuracion"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.ListarObjetos"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.AgregarObjeto"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.Registro"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.admin.Login"
             android:exported="false" />
         <activity
             android:name=".Controller.PantalaDeCarga"
@@ -65,7 +124,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityAdmin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

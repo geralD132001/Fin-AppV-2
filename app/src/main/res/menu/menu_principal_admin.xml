@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/calendarMenuItemAdmin"
+        android:icon="@drawable/icono_date_admin_item"
+        android:title="@string/calendarMenuItemAdmin"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/acerdaDeItemAdmin"
+        android:icon="@drawable/icono_developer"
+        android:title="@string/acerdaDeItemAdmin"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:title="@string/cerrarSesionItemAdmin"
+        android:id="@+id/cerrarSesionItemAdmin"
+        android:icon="@drawable/salir_icon_admin_item"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>
