@@ -29,8 +29,8 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/imagenPerfilAdmin"
-                    android:layout_width="80dp"
-                    android:layout_height="100dp"
+                    android:layout_width="118dp"
+                    android:layout_height="190dp"
                     android:scaleType="centerCrop"
                     android:layout_weight="1"
                     android:layout_gravity="center"
@@ -67,6 +67,17 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/worksans"
                         android:text="@string/uidPrincipal"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <!-- idObjeto -->
+                    <TextView
+                        android:id="@+id/idObjetoAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/worksans"
+                        android:text="@string/idObjetoAdd"
                         android:textColor="#fff"
                         android:textSize="20sp"
                         android:visibility="gone" />

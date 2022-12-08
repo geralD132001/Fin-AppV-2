@@ -47,6 +47,8 @@
     <string name="buttonCerrarSesion">Salir</string>
     <string name="bienvenidoPrincipal">Bienvenido(a)</string>
     <string name="uidPrincipal"> -- </string>
+    <string name="idObjetoAdd"> -- </string>
+
     <string name="nombresPrincipal"> -- </string>
     <string name="correoPrincipal"> -- </string>
     <string name="estadoCuentaPrincipal">No Verificado</string>
@@ -226,6 +228,10 @@
     <string name="buttonImagenDe">Elegir imagen de</string>
     <string name="buttonActualizarImagen">Actualizar imagen</string>
 
+    <!-- Subir imagen de objeto -->
+    <string name="buttonImagenDeObject">Elegir imagen de</string>
+    <string name="buttonAgregarImagenObject">Actualizar imagen</string>
+
     <!-- Perfil de usuario común Imagen de perfil -->
     <string name="buttonImagenDeUser">Elegir imagen de</string>
     <string name="buttonActualizarImagenUser">Actualizar imagen</string>
@@ -240,10 +246,16 @@
     <string name="buttonElegirGaleriaUser">Galería</string>
     <string name="buttonElegirCamaraUser">Cámara</string>
 
+    <!-- CUADRO DE DIALOGO - ELEGIR IMAGEN DE  - SUBIR IMAGEN OBJETO -->
+    <string name="elegirImagenTXTObjeto">Elegir imagen de:</string>
+    <string name="buttonElegirGaleriaObjeto">Galería</string>
+    <string name="buttonElegirCamaraObjeto">Cámara</string>
+
     <!-- Agregar Objeto -->
     <string name="uidUsuarioAddObjeto">Uid del Usuario</string>
     <string name="correoUsuarioAddObjeto">Correo de usuario</string>
     <string name="fechaHoraActualTXTAddObjeto">Fecha de registro</string>
+    <string name="idObjetos">Fecha de registro</string>
     <string name="fechaHoraActualAddObjeto">Fecha y Hora Actual</string>
     <string name="tituloAddObjeto">Título</string>
     <string name="telefonoAddObjeto">Contacto</string>
@@ -254,6 +266,9 @@
     <string name="fechaAddObjeto">00/00/00</string>
     <string name="estadoAddObjeto">Perdido</string>
     <string name="buttonAddObjeto">Guardar objeto</string>
+
+    <string name="idAgregarObjeto">Id objeto</string>
+
 
     <!-- Actualizar Objeto -->
     <string name="idUpdateObjeto">Id objeto</string>

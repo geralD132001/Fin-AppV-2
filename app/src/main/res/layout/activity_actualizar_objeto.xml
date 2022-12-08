@@ -24,8 +24,8 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageObjetoUpdate"
-                android:layout_width="210dp"
-                android:layout_height="210dp"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="120dp"
                 android:background="#354F60"
@@ -36,8 +36,8 @@
                 android:id="@+id/updateImagenObjeto"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginStart="220dp"
-                android:layout_marginTop="300dp"
+                android:layout_marginStart="295dp"
+                android:layout_marginTop="350dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/editar_imagen_perfil" />
 

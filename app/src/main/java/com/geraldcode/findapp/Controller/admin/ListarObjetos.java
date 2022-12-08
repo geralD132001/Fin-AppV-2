@@ -198,11 +198,8 @@ public class ListarObjetos extends AppCompatActivity {
             }
         };
 
-        linearLayoutManager = new LinearLayoutManager(ListarObjetos.this, LinearLayoutManager.VERTICAL, false);
-        linearLayoutManager.setReverseLayout(true);
-        linearLayoutManager.setStackFromEnd(true);
-
-        recyclerViewObjetos.setLayoutManager(linearLayoutManager);
+        recyclerViewObjetos.setLayoutManager(new GridLayoutManager(ListarObjetos.this, 2));
+        firebaseRecyclerAdapter.startListening();
         recyclerViewObjetos.setAdapter(firebaseRecyclerAdapter);
     }
 
@@ -324,11 +321,8 @@ public class ListarObjetos extends AppCompatActivity {
             }
         };
 
-        linearLayoutManager = new LinearLayoutManager(ListarObjetos.this, LinearLayoutManager.VERTICAL, false);
-        linearLayoutManager.setReverseLayout(true);
-        linearLayoutManager.setStackFromEnd(true);
-
-        recyclerViewObjetos.setLayoutManager(linearLayoutManager);
+        recyclerViewObjetos.setLayoutManager(new GridLayoutManager(ListarObjetos.this, 2));
+        firebaseRecyclerAdapter.startListening();
         recyclerViewObjetos.setAdapter(firebaseRecyclerAdapter);
     }
 
@@ -449,11 +443,8 @@ public class ListarObjetos extends AppCompatActivity {
             }
         };
 
-        linearLayoutManager = new LinearLayoutManager(ListarObjetos.this, LinearLayoutManager.VERTICAL, false);
-        linearLayoutManager.setReverseLayout(true);
-        linearLayoutManager.setStackFromEnd(true);
-
-        recyclerViewObjetos.setLayoutManager(linearLayoutManager);
+        recyclerViewObjetos.setLayoutManager(new GridLayoutManager(ListarObjetos.this, 2));
+        firebaseRecyclerAdapter.startListening();
         recyclerViewObjetos.setAdapter(firebaseRecyclerAdapter);
     }
 
@@ -574,11 +565,8 @@ public class ListarObjetos extends AppCompatActivity {
             }
         };
 
-        linearLayoutManager = new LinearLayoutManager(ListarObjetos.this, LinearLayoutManager.VERTICAL, false);
-        linearLayoutManager.setReverseLayout(true);
-        linearLayoutManager.setStackFromEnd(true);
-
-        recyclerViewObjetos.setLayoutManager(linearLayoutManager);
+        recyclerViewObjetos.setLayoutManager(new GridLayoutManager(ListarObjetos.this, 2));
+        firebaseRecyclerAdapter.startListening();
         recyclerViewObjetos.setAdapter(firebaseRecyclerAdapter);
     }
 

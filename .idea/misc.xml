@@ -17,6 +17,7 @@
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable-v24/titulo_nota_detalle.xml" value="0.2385" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/acerca_de_icon.xml" value="0.243" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/calendar_menu_admin.xml" value="0.2295" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/camera_test.xml" value="0.213" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/categoria_icon.xml" value="0.2385" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/ic_baseline_add_location_alt_24.xml" value="0.2385" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/icon_lugar_perdida.xml" value="0.2385" />
@@ -29,10 +30,11 @@
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/imagen_usuario_admin.xml" value="0.2295" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/drawable/salir_icon_admin_item.xml" value="0.2295" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_actualizar_nota.xml" value="0.24895833333333334" />
-        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_actualizar_objeto.xml" value="0.264" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_actualizar_objeto.xml" value="0.176" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_actualizar_pass_admin.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_actualizar_pass_usuario.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_actualizat_nota_admin.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_agregar_imagen_objeto.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_agregar_nota.xml" value="0.264" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_agregar_nota_admin.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_agregar_objeto.xml" value="0.2" />
@@ -54,7 +56,7 @@
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_main2.xml" value="0.23489583333333333" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_main_estudiante.xml" value="0.264" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_menu_principal.xml" value="0.264" />
-        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_menu_principal_estudiante.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_menu_principal_estudiante.xml" value="0.264" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_notas_importantes.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_notas_importantes_admin.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/activity_pantala_de_carga.xml" value="0.24895833333333334" />
@@ -67,6 +69,7 @@
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialog_fecha_admin.xml" value="0.24791666666666667" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialog_fecha_user.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_elegir_imagen.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_elegir_imagen_objeto.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_elegir_imagen_user.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_eliminar_nota_importante_admin.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/cuadro_dialogo_eliminar_nota_importante_user.xml" value="0.24895833333333334" />
@@ -85,7 +88,7 @@
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/item_nota_importante.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/item_nota_importante_admin.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/item_objeto.xml" value="0.24791666666666667" />
-        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/item_objeto_user.xml" value="0.2" />
+        <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/layout/item_objeto_user.xml" value="0.264" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/menu/menu_actualizar.xml" value="0.264" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/menu/menu_actualizar_nota_user.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/dcmor/FindApp/app/src/main/res/menu/menu_actualizar_password.xml" value="0.24895833333333334" />

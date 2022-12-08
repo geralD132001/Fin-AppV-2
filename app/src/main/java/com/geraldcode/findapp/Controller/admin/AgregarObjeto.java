@@ -1,16 +1,31 @@
 package com.geraldcode.findapp.Controller.admin;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
+import android.content.ContentResolver;
+import android.content.ContentValues;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -18,10 +33,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.geraldcode.findapp.Controller.user.EditarImagenPerfilUser;
+import com.geraldcode.findapp.Controller.user.PerfilUserCommon;
 import com.geraldcode.findapp.Model.Objeto;
 import com.geraldcode.findapp.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.hbb20.CountryCodePicker;
 
 import java.text.SimpleDateFormat;
@@ -30,17 +54,23 @@ import java.util.Locale;
 
 public class AgregarObjeto extends AppCompatActivity {
 
-    TextView fechaHoralActual, fechaPerdidaAddObjeto, estadoAddObjeto, telefonoContactoAddObjeto;
+    TextView fechaHoralActual, fechaPerdidaAddObjeto, estadoAddObjeto, telefonoContactoAddObjeto, idObjetos;
     EditText tituloAddObjeto, descripcionAddObjeto, categoriaAddObjeto, lugarPerdidaAddObjeto;
     Button buttonCalendarioAddObjeto, buttonGuardarObjeto;
-    ImageView editarTelefonoContactoAddObjeto;
 
-    Dialog dialog, dialogEstablecerTelefono;
+    ImageView editarTelefonoContactoAddObjeto, imagenObjetoPerdido;
+
+    Dialog dialog, dialogEstablecerTelefono, dialogElegirImagen;
+
+    ProgressDialog progressDialog;
+
+    String rutaAlmacenamiento = "Objetos_Subida";
+
+    Uri rutaArchivoUri = null;
 
     int dia, mes, anio;
 
-
-
+    StorageReference mStorageReference;
     DatabaseReference BD_Firebase;
 
     @Override
@@ -56,6 +86,7 @@ public class AgregarObjeto extends AppCompatActivity {
         // El inicializar variables tiene que ir siempre antes de capturar los datos
         InicializarVariables();
         ObtenerFechaHoraActual();
+
 
         buttonCalendarioAddObjeto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,14 +135,123 @@ public class AgregarObjeto extends AppCompatActivity {
             }
         });
 
-        buttonGuardarObjeto.setOnClickListener(new View.OnClickListener() {
+        imagenObjetoPerdido.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AgregarObjetoBD();
+                ElegirImagenDe();
             }
         });
 
+        buttonGuardarObjeto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SubirImagen();
+            }
+        });
     }
+
+    private void ElegirImagenDe() {
+
+        Button buttonElegirGaleria, buttonElegirCamara;
+
+        dialogElegirImagen.setContentView(R.layout.cuadro_dialogo_elegir_imagen_objeto);
+
+        buttonElegirGaleria = dialogElegirImagen.findViewById(R.id.buttonElegirGaleriaObjeto);
+        buttonElegirCamara = dialogElegirImagen.findViewById(R.id.buttonElegirCamaraObjeto);
+
+        buttonElegirGaleria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (ContextCompat.checkSelfPermission(AgregarObjeto.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                    SeleccionarImagenGaleria();
+                    dialogElegirImagen.dismiss();
+                } else {
+                    SolicitudPermisoGaleria.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+                    dialogElegirImagen.dismiss();
+                }
+            }
+        });
+
+        buttonElegirCamara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (ContextCompat.checkSelfPermission(AgregarObjeto.this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                    SeleccionarImagenCamara();
+                    dialogElegirImagen.dismiss();
+                } else {
+                    SolicitudPermisoCamara.launch(Manifest.permission.CAMERA);
+                    dialogElegirImagen.dismiss();
+                }
+            }
+        });
+
+        dialogElegirImagen.show();
+        dialogElegirImagen.setCanceledOnTouchOutside(true);
+    }
+
+    private void SeleccionarImagenCamara() {
+        ContentValues values = new ContentValues();
+        values.put(MediaStore.Images.Media.TITLE, "Nueva imagen");
+        values.put(MediaStore.Images.Media.DESCRIPTION, "Descripción de imagen");
+        rutaArchivoUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, rutaArchivoUri);
+        camaraActivityResultLauncher.launch(intent);
+    }
+
+    private ActivityResultLauncher<Intent> camaraActivityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        imagenObjetoPerdido.setImageURI(rutaArchivoUri);
+                    } else {
+                        Toast.makeText(AgregarObjeto.this, "Cancelado por el usuario", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+    );
+
+    /*PERMISO PARA ACCEDER A LA CAMARA*/
+    private ActivityResultLauncher<String> SolicitudPermisoCamara =
+            registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
+                if (isGranted) {
+                    SeleccionarImagenCamara();
+                } else {
+                    Toast.makeText(this, "Permiso denegado", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+    private ActivityResultLauncher<String> SolicitudPermisoGaleria = registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
+        if (isGranted) {
+            SeleccionarImagenGaleria();
+        } else {
+            Toast.makeText(this, "Permiso denegado", Toast.LENGTH_SHORT).show();
+        }
+    });
+
+
+    private void SeleccionarImagenGaleria() {
+        Intent intent = new Intent(Intent.ACTION_PICK);
+        intent.setType("image/*");
+        galeriaActivityResultLauncher.launch(intent);
+    }
+
+    private ActivityResultLauncher<Intent> galeriaActivityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+        @Override
+        public void onActivityResult(ActivityResult result) {
+            if (result.getResultCode() == Activity.RESULT_OK) {
+                Intent data = result.getData();
+                rutaArchivoUri = data.getData();
+                imagenObjetoPerdido.setImageURI(rutaArchivoUri);
+            } else {
+                Toast.makeText(AgregarObjeto.this, "Cancelado por el usuario", Toast.LENGTH_SHORT).show();
+            }
+        }
+    });
+
 
     private void EstablecerTelefonoContactoObjeto() {
         CountryCodePicker ccp;
@@ -151,17 +291,21 @@ public class AgregarObjeto extends AppCompatActivity {
         estadoAddObjeto = findViewById(R.id.estadoAddObjeto);
         tituloAddObjeto = findViewById(R.id.tituloAddObjeto);
         descripcionAddObjeto = findViewById(R.id.descripcionAddObjeto);
+
         telefonoContactoAddObjeto = findViewById(R.id.telefonoAddObjeto);
+        imagenObjetoPerdido = findViewById(R.id.imageObjetoAdd);
         editarTelefonoContactoAddObjeto = findViewById(R.id.editarTelefonoContactoAddObjeto);
         categoriaAddObjeto = findViewById(R.id.categoriaAddObjeto);
         lugarPerdidaAddObjeto = findViewById(R.id.lugarPerdidaAddObjeto);
         buttonGuardarObjeto = findViewById(R.id.buttonAddObjeto);
         buttonCalendarioAddObjeto = findViewById(R.id.btnCalendarioAddObjeto);
+        progressDialog = new ProgressDialog(AgregarObjeto.this);
 
+        dialogElegirImagen = new Dialog(AgregarObjeto.this);
         dialogEstablecerTelefono = new Dialog(AgregarObjeto.this);
+        idObjetos = findViewById(R.id.idObjetos);
+        mStorageReference = FirebaseStorage.getInstance().getReference();
         BD_Firebase = FirebaseDatabase.getInstance().getReference("Objetos");
-
-
 
         dialog = new Dialog(AgregarObjeto.this);
 
@@ -175,7 +319,82 @@ public class AgregarObjeto extends AppCompatActivity {
         fechaHoralActual.setText(fechaHoraRegistro);
     }
 
-    private void AgregarObjetoBD() {
+    private void SubirImagen() {
+
+        String fechaHoraActual = fechaHoralActual.getText().toString();
+        String tituloObjeto = tituloAddObjeto.getText().toString();
+        String descripcionObjeto = descripcionAddObjeto.getText().toString();
+        String categoriaObjeto = categoriaAddObjeto.getText().toString();
+        String lugarDePerdida = lugarPerdidaAddObjeto.getText().toString();
+        String contactoPerdida = telefonoContactoAddObjeto.getText().toString();
+        String fechaPerdida = fechaPerdidaAddObjeto.getText().toString();
+        String estadoObjeto = estadoAddObjeto.getText().toString();
+
+        String idObjeto = BD_Firebase.push().getKey();
+
+        //Validar que el nombre y la imagen no sean nulos
+        if (fechaHoraActual.equals("") || tituloObjeto.equals("") || descripcionObjeto.equals("")
+                || categoriaObjeto.equals("")
+                || lugarDePerdida.equals("")
+                || contactoPerdida.equals("")
+                || fechaPerdida.equals("")
+                || estadoObjeto.equals("") || rutaArchivoUri == null) {
+            ValidarRegistroObjeto();
+        } else {
+            progressDialog.setTitle("Espere por favor");
+            progressDialog.setMessage("Guardando información OBJETO ...");
+            progressDialog.show();
+            progressDialog.setCancelable(false);
+            StorageReference storageReference2 = mStorageReference.child(rutaAlmacenamiento + System.currentTimeMillis() + "." + ObtenerExtensionDelArchivo(rutaArchivoUri));
+            //20210204_1234.PNG
+            storageReference2.putFile(rutaArchivoUri)
+                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
+                            Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
+                            while (!uriTask.isSuccessful()) ;
+
+                            Uri downloadURI = uriTask.getResult();
+
+                            Objeto objeto = new Objeto(idObjeto, fechaHoraActual, tituloObjeto, descripcionObjeto, categoriaObjeto, lugarDePerdida, contactoPerdida, fechaPerdida, estadoObjeto, downloadURI.toString());
+
+                            assert idObjeto != null;
+
+                            BD_Firebase.child(idObjeto).setValue(objeto);
+
+                            progressDialog.dismiss();
+                            Toast.makeText(AgregarObjeto.this, "Subido Exitosamente", Toast.LENGTH_SHORT).show();
+
+                            startActivity(new Intent(AgregarObjeto.this, ListarObjetos.class));
+                            finish();
+
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            progressDialog.dismiss();
+                            Toast.makeText(AgregarObjeto.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
+                            progressDialog.setTitle("Publicando");
+                            progressDialog.setCancelable(false);
+                        }
+                    });
+
+        }
+    }
+
+    private String ObtenerExtensionDelArchivo(Uri uri) {
+        ContentResolver contentResolver = getContentResolver();
+        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
+    }
+
+
+    /* private void AgregarObjetoBD() {
         String fechaHoraActual = fechaHoralActual.getText().toString();
         String tituloObjeto = tituloAddObjeto.getText().toString();
         String descripcionObjeto = descripcionAddObjeto.getText().toString();
@@ -216,7 +435,7 @@ public class AgregarObjeto extends AppCompatActivity {
             ValidarRegistroObjeto();
         }
 
-    }
+    } */
 
     private void ValidarRegistroObjeto() {
 
@@ -247,7 +466,7 @@ public class AgregarObjeto extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.agregarObjetoMenu2:
-                AgregarObjetoBD();
+                SubirImagen();
                 break;
         }
         return super.onOptionsItemSelected(item);

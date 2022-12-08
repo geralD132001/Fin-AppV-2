@@ -168,7 +168,7 @@ public class ActualizarObjeto extends AppCompatActivity implements AdapterView.O
                 Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
                 while (!uriTask.isSuccessful()) ;
                 String uriImagen = "" + uriTask.getResult();
-                ActualizarImagenContactoDb(uriImagen);
+                ActualizarImagenObjetoDb(uriImagen);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
@@ -178,7 +178,7 @@ public class ActualizarObjeto extends AppCompatActivity implements AdapterView.O
         });
     }
 
-    private void ActualizarImagenContactoDb(String uriImagen) {
+    private void ActualizarImagenObjetoDb(String uriImagen) {
         progressDialog.setMessage("Actualizando la imagen");
         progressDialog.show();
 

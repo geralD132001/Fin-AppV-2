@@ -84,7 +84,7 @@ public class Registro extends AppCompatActivity {
         if (TextUtils.isEmpty(nombre)) {
             Toast.makeText(this, "Ingrese nombre", Toast.LENGTH_SHORT).show();
         } else if (!Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
-            Toast.makeText(this, "Ingrese correo", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Ingrese un correo con el formato adecuado", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(password)) {
             Toast.makeText(this, "Ingresar Contraseña", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(confirmarPassword)) {

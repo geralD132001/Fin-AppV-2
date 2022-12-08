@@ -55,14 +55,14 @@ public class MenuPrincipalAdmin extends AppCompatActivity {
 
 
     Button estadoDeCuentaActual;
-    TextView nombresPrincipal, correoPrincipal, uidPrincipal;
+    TextView nombresPrincipal, correoPrincipal, uidPrincipal, idObjeto;
 
     LinearLayoutCompat linearNombres, linearCorreo, linearVerificacion;
 
     ProgressBar progressBarData;
     ProgressDialog progressDialog;
 
-    DatabaseReference usuarios;
+    DatabaseReference usuarios, objetos;
 
     Dialog dialogCuentaVerificada, dialogInformacion, dialogFecha;
 
@@ -76,6 +76,8 @@ public class MenuPrincipalAdmin extends AppCompatActivity {
         actionBar.setTitle("");
 
         usuarios = FirebaseDatabase.getInstance().getReference("Usuarios");
+        objetos = FirebaseDatabase.getInstance().getReference("Objetos");
+
 
         nombresPrincipal = findViewById(R.id.nombresPrincipal);
         correoPrincipal = findViewById(R.id.correoPrincipal);
